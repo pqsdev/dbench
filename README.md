@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: dbench
-        image: sotoaster/dbench:latest
+        image: quay.io/pqsdev/dbench:main
         imagePullPolicy: IfNotPresent
         env:
           - name: DBENCH_MOUNTPOINT

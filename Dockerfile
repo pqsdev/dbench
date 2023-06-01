@@ -28,5 +28,7 @@ RUN apk --no-cache add \
 VOLUME /tmp
 WORKDIR /tmp
 COPY ./docker-entrypoint.sh /
+
+RUN chmod +x /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["fio"]
